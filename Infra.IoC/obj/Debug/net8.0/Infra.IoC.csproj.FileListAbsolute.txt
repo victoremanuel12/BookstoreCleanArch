@@ -1,0 +1,11 @@
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Infra.IoC\bin\Debug\net8.0\Infra.IoC.deps.json
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Infra.IoC\bin\Debug\net8.0\Infra.IoC.dll
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Infra.IoC\bin\Debug\net8.0\Infra.IoC.pdb
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Infra.IoC\obj\Debug\net8.0\Infra.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Infra.IoC\obj\Debug\net8.0\Infra.IoC.AssemblyInfoInputs.cache
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Infra.IoC\obj\Debug\net8.0\Infra.IoC.AssemblyInfo.cs
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Infra.IoC\obj\Debug\net8.0\Infra.IoC.csproj.CoreCompileInputs.cache
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Infra.IoC\obj\Debug\net8.0\Infra.IoC.dll
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Infra.IoC\obj\Debug\net8.0\refint\Infra.IoC.dll
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Infra.IoC\obj\Debug\net8.0\Infra.IoC.pdb
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Infra.IoC\obj\Debug\net8.0\ref\Infra.IoC.dll

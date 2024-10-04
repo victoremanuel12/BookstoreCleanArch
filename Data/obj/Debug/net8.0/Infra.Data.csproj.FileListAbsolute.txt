@@ -1,0 +1,5 @@
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Data.csproj.AssemblyReference.cache
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfoInputs.cache
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfo.cs
+C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Data.csproj.CoreCompileInputs.cache
