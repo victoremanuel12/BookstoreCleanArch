@@ -4,7 +4,7 @@ namespace Application.ServiceInterface
 {
     public interface  IAuthorService
     {
-        Task<IEnumerable<AuthorDto>> GetAllAuthors();
+        Task<IEnumerable<AuthorDto>>Authors();
 
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Application.Mappings;
 using Application.ServiceInterface;
 using Application.Services;
 using Infra.Data;
@@ -13,7 +14,7 @@ namespace Infra.IoC
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            string connectionString = configuration.GetConnectionString("DefaultConection");
+            string connectionString = configuration.GetConnectionString("DefaultConnection");
 
             services.AddDbContext<AppDbContext>(options =>
             {
@@ -22,7 +23,7 @@ namespace Infra.IoC
             });
             services.AddScoped<IAuthorService, AuthorService>();
             services.AddScoped<IAuthorRepository, AuthorRepository>();
-
+            services.AddAutoMapper(typeof(Mappings));
             return services;
         }
 

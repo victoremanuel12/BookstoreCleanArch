@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.IoC", "Infra.IoC\Infr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{459696EC-E406-43F1-9B61-368106A2F381}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.Api", "Web.App\Web.Api.csproj", "{8877CA55-B305-44DA-8D2A-EEBF15BA247B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{459696EC-E406-43F1-9B61-368106A2F381}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{459696EC-E406-43F1-9B61-368106A2F381}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{459696EC-E406-43F1-9B61-368106A2F381}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8877CA55-B305-44DA-8D2A-EEBF15BA247B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8877CA55-B305-44DA-8D2A-EEBF15BA247B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8877CA55-B305-44DA-8D2A-EEBF15BA247B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8877CA55-B305-44DA-8D2A-EEBF15BA247B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
