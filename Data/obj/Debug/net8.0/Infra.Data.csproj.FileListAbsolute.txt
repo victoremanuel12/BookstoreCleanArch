@@ -3,3 +3,21 @@ C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Da
 C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfoInputs.cache
 C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfo.cs
 C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.deps.json
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.runtimeconfig.json
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.dll
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.pdb
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\bin\Debug\net8.0\Domain.dll
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\bin\Debug\net8.0\Domain.pdb
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.csproj.AssemblyReference.cache
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfoInputs.cache
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfo.cs
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.sourcelink.json
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.csproj.Up2Date
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.dll
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\refint\Infra.Data.dll
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.pdb
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.genruntimeconfig.cache
+C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\ref\Infra.Data.dll

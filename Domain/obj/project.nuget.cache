@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sr7zSBXqA+w=",
+  "dgSpecHash": "8YIdArT6m6UFzm9dEB+briMHV4fQRkq2OPmlmTK95CIlfGZuKX3kvAqS0SpPkFWONCh7kpkRWtiAflWlPTBzAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Victor Emanuel\\source\\repos\\BookStoreApi\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
