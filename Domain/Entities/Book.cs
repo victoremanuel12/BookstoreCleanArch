@@ -12,7 +12,6 @@ namespace Domain.Entities
 
         public Publisher Publisher { get; set; }
 
-        public long ReviewId { get; set; }
         public Review Review { get; set; }
         public ICollection<Author> Authors { get; set; }
     }

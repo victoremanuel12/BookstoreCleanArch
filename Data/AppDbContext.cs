@@ -21,14 +21,19 @@ namespace Infra.Data
                 builder.Property(b => b.Title)
                     .HasColumnName("title") 
                     .HasColumnType("varchar(255)")
-                    .IsRequired(); 
+                    .IsRequired();
 
                 // Relacionamentos
+                //builder.HasOne(b => b.Review)
+                //    .WithOne(r => r.Book)
+                //    .HasForeignKey<Book>(b => b.ReviewId)
+                //    .HasConstraintName("review_id")
+                //    .OnDelete(DeleteBehavior.Cascade);
                 builder.HasOne(b => b.Review)
-                    .WithOne(r => r.Book)
-                    .HasForeignKey<Book>(b => b.ReviewId)
-                    .HasConstraintName("review_id")
-                    .OnDelete(DeleteBehavior.Cascade);
+                       .WithOne(r => r.Book)
+                       .HasForeignKey<Review>(r => r.BookId) 
+                       .HasConstraintName("book_id")
+                       .OnDelete(DeleteBehavior.Cascade);
 
                 builder.HasMany(b => b.Authors)
                     .WithMany(a => a.Books)
