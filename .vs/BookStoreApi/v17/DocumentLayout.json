@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{328AD995-5832-4387-AA3C-4C299E510EB1}|Infra.IoC\\Infra.IoC.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{328AD995-5832-4387-AA3C-4C299E510EB1}|Infra.IoC\\Infra.IoC.csproj|solutionrelative:infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\application\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|solutionrelative:application\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Services\\AuthorService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\AuthorService.cs",
+              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Services\\AuthorService.cs",
+              "RelativeToolTip": "Application\\Services\\AuthorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T18:10:27.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T21:02:02.525Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Infra.IoC\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Infra.IoC\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Infra.IoC\\DependencyInjection.cs",
-              "RelativeToolTip": "Infra.IoC\\DependencyInjection.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T21:01:48.808Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Api\\appsettings.json",
-              "RelativeDocumentMoniker": "Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Api\\appsettings.json",
-              "RelativeToolTip": "Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-07T21:01:35.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Api\\Program.cs",
-              "RelativeDocumentMoniker": "Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Api\\Program.cs",
-              "RelativeToolTip": "Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T20:59:41.086Z",
+              "WhenOpened": "2024-10-10T17:37:31.053Z",
               "EditorCaption": ""
             }
           ]

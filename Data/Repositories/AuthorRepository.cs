@@ -13,7 +13,15 @@ namespace Infra.Data.Repositories
             _context = context;
         }
 
-       async  Task<IEnumerable<Author>> IAuthorRepository.GetAll()
+        
+
+        public async Task<ICollection<Author>> GetAllWithBooks()
+        {
+            return await  _context.Authors.Include(b => b.Books).ToListAsync();
+                 
+        }
+
+        async  Task<ICollection<Author>> IAuthorRepository.GetAll()
         {
             return await _context.Authors.ToListAsync();
         }

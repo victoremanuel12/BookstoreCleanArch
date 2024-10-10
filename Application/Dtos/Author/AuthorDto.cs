@@ -1,6 +1,8 @@
-﻿namespace Application.Dtos.Author
+﻿using Domain.Entities;
+
+namespace Application.Dtos.Author
 {
-    public class AuthorDto
+    public record AuthorDto(string Name,ICollection<Book> Books)
     {
     }
 }

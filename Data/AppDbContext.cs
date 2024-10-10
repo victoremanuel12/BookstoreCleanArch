@@ -11,9 +11,12 @@ namespace Infra.Data
         {
             modelBuilder.Entity<Book>(builder =>
             {
-                builder.ToTable("book"); 
+                builder.ToTable("book");
 
                 builder.HasKey(b => b.Id);
+                builder.Property(p => p.Id)
+                   .HasColumnName("id")
+                   .IsRequired();
 
                 builder.Property(b => b.Title)
                     .HasColumnName("title") 
@@ -24,6 +27,7 @@ namespace Infra.Data
                 builder.HasOne(b => b.Review)
                     .WithOne(r => r.Book)
                     .HasForeignKey<Book>(b => b.ReviewId)
+                    .HasConstraintName("review_id")
                     .OnDelete(DeleteBehavior.Cascade);
 
                 builder.HasMany(b => b.Authors)
@@ -42,10 +46,10 @@ namespace Infra.Data
                             .OnDelete(DeleteBehavior.Cascade)
                     );
 
-                // Relacionamento One-to-Many com Publisher
-                builder.HasOne(b => b.Publisher)
+                    builder.HasOne(b => b.Publisher)
                     .WithMany(p => p.Books)
                     .HasForeignKey(b => b.PublisherId)
+                    .HasConstraintName("publisher_id") 
                     .OnDelete(DeleteBehavior.Cascade);
             });
 
@@ -54,6 +58,9 @@ namespace Infra.Data
             {
                 builder.ToTable("publisher");
                 builder.HasKey(p => p.Id);
+                builder.Property(p => p.Id)
+                  .HasColumnName("id")
+                  .IsRequired();
                 builder.Property(p => p.Name)
                    .HasColumnName("name")
                    .HasColumnType("varchar(255)")
@@ -64,6 +71,9 @@ namespace Infra.Data
             {
                 builder.ToTable("author");
                 builder.HasKey(a => a.Id);
+                builder.Property(p => p.Id)
+                  .HasColumnName("id")
+                  .IsRequired();
                 builder.Property(p => p.Id)
                     .HasColumnName("id")
                     .IsRequired();
@@ -78,6 +88,9 @@ namespace Infra.Data
             {
                 builder.ToTable("review");
                 builder.HasKey(r => r.Id);
+                builder.Property(p => p.Id)
+                  .HasColumnName("id")
+                  .IsRequired();
                 builder.Property(p => p.Comment)
                  .HasColumnName("comment")
                  .HasColumnType("varchar(255)")

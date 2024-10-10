@@ -4,6 +4,8 @@ namespace Application.Interfaces
 {
     public interface IAuthorRepository
     {
-        Task<IEnumerable<Author>> GetAll();
+        Task<ICollection<Author>> GetAll();
+        Task<ICollection<Author>> GetAllWithBooks();
+
     }
 }

@@ -17,11 +17,18 @@ namespace Application.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<AuthorDto>> Authors()
+        public async Task<ICollection<AuthorDto>> Authors()
         {
-            IEnumerable<Author> listAutor = await _authorRepository.GetAll();
-            IEnumerable<AuthorDto> listAuthorDto = _mapper.Map<IEnumerable<AuthorDto>>(listAutor);
+            ICollection<Author> listAutor = await _authorRepository.GetAll();
+            ICollection<AuthorDto> listAuthorDto = _mapper.Map<ICollection<AuthorDto>>(listAutor);
             return listAuthorDto;
+        }
+
+        public async Task<ICollection<AuthorDto>> AuthorsWithBooks()
+        {
+            ICollection<Author> authorWithBooks = await _authorRepository.GetAllWithBooks();
+            ICollection<AuthorDto> authorWithBookDto = _mapper.Map<ICollection<AuthorDto>>(authorWithBooks);
+            return authorWithBookDto;
         }
     }
 }
