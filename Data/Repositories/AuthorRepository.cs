@@ -13,7 +13,11 @@ namespace Infra.Data.Repositories
             _context = context;
         }
 
-        
+        async  Task<ICollection<Author>> IAuthorRepository.GetAll()
+        {
+            return await _context.Authors.ToListAsync();
+        }
+    
 
         public async Task<ICollection<Author>> GetAllWithBooks()
         {
@@ -21,9 +25,5 @@ namespace Infra.Data.Repositories
                  
         }
 
-        async  Task<ICollection<Author>> IAuthorRepository.GetAll()
-        {
-            return await _context.Authors.ToListAsync();
-        }
     }
 }

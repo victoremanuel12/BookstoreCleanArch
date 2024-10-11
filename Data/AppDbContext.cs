@@ -19,19 +19,14 @@ namespace Infra.Data
                    .IsRequired();
 
                 builder.Property(b => b.Title)
-                    .HasColumnName("title") 
+                    .HasColumnName("title")
                     .HasColumnType("varchar(255)")
                     .IsRequired();
 
                 // Relacionamentos
-                //builder.HasOne(b => b.Review)
-                //    .WithOne(r => r.Book)
-                //    .HasForeignKey<Book>(b => b.ReviewId)
-                //    .HasConstraintName("review_id")
-                //    .OnDelete(DeleteBehavior.Cascade);
                 builder.HasOne(b => b.Review)
                        .WithOne(r => r.Book)
-                       .HasForeignKey<Review>(r => r.BookId) 
+                       .HasForeignKey<Review>(r => r.BookId)
                        .HasConstraintName("book_id")
                        .OnDelete(DeleteBehavior.Cascade);
 
@@ -50,12 +45,14 @@ namespace Infra.Data
                             .HasForeignKey("book_id")
                             .OnDelete(DeleteBehavior.Cascade)
                     );
+                builder.Property(b => b.PublisherId)
+                .HasColumnName("publisher_id");
 
-                    builder.HasOne(b => b.Publisher)
-                    .WithMany(p => p.Books)
-                    .HasForeignKey(b => b.PublisherId)
-                    .HasConstraintName("publisher_id") 
-                    .OnDelete(DeleteBehavior.Cascade);
+                builder.HasOne(b => b.Publisher)
+                  .WithMany(p => p.Books)
+                  .HasForeignKey(b => b.PublisherId)
+                  .HasConstraintName("publisher_id")
+                  .OnDelete(DeleteBehavior.Cascade);
             });
 
             // Mapeamento para outras entidades
