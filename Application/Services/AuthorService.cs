@@ -21,17 +21,17 @@ namespace Application.Services
             Author author = _mapper.Map<Author>(authorDtoRequest);
             await _authorRepository.Create(author);
         }
-        public async Task<ICollection<AuthorDtoResponse>> Authors()
+        public async Task<IEnumerable<AuthorDtoResponse>> Authors()
         {
-            ICollection<Author> listAutor = await _authorRepository.GetAll();
-            ICollection<AuthorDtoResponse> listAuthorDto = _mapper.Map<ICollection<AuthorDtoResponse>>(listAutor);
+            IEnumerable<Author> listAutor = await _authorRepository.GetAll();
+            IEnumerable<AuthorDtoResponse> listAuthorDto = _mapper.Map<IEnumerable<AuthorDtoResponse>>(listAutor);
             return listAuthorDto;
         }
 
-        public async Task<ICollection<AuthorDtoResponse>> AuthorsWithBooks()
+        public async Task<IEnumerable<AuthorDtoResponse>> AuthorsWithBooks()
         {
-            ICollection<Author> authorWithBooks = await _authorRepository.GetAllWithBooks();
-            ICollection<AuthorDtoResponse> authorWithBookDto = _mapper.Map<ICollection<AuthorDtoResponse>>(authorWithBooks);
+            IEnumerable<Author> authorWithBooks = await _authorRepository.GetAllWithBooks();
+            IEnumerable<AuthorDtoResponse> authorWithBookDto = _mapper.Map<IEnumerable<AuthorDtoResponse>>(authorWithBooks);
             return authorWithBookDto;
         }
     }

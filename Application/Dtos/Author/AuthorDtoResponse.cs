@@ -2,7 +2,7 @@
 
 namespace Application.Dtos.Author
 {
-    public record AuthorDtoResponse(long Id , string Name,ICollection<Book> Books)
+    public record AuthorDtoResponse(long Id , string Name,IEnumerable<Book> Books)
     {
     }
 }

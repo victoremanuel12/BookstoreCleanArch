@@ -16,13 +16,13 @@ namespace Api.Controllers
         [HttpGet]
         public async Task<IEnumerable<AuthorDtoResponse>> Get()
         {
-            ICollection<AuthorDtoResponse> listAuthor = await _authorService.Authors();
+            IEnumerable<AuthorDtoResponse> listAuthor = await _authorService.Authors();
             return listAuthor;
         }
         [HttpGet("books")]
         public async Task<IEnumerable<AuthorDtoResponse>> GetAllWithBooks()
         {
-            ICollection<AuthorDtoResponse> listAuthor = await _authorService.AuthorsWithBooks();
+            IEnumerable<AuthorDtoResponse> listAuthor = await _authorService.AuthorsWithBooks();
             return listAuthor;
         }
 
