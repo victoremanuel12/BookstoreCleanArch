@@ -14,15 +14,15 @@ namespace Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<AuthorDto>> Get()
+        public async Task<IEnumerable<AuthorDtoResponse>> Get()
         {
-            ICollection<AuthorDto> listAuthor = await _authorService.Authors();
+            ICollection<AuthorDtoResponse> listAuthor = await _authorService.Authors();
             return listAuthor;
         }
         [HttpGet("books")]
-        public async Task<IEnumerable<AuthorDto>> GetAllWithBooks()
+        public async Task<IEnumerable<AuthorDtoResponse>> GetAllWithBooks()
         {
-            ICollection<AuthorDto> listAuthor = await _authorService.AuthorsWithBooks();
+            ICollection<AuthorDtoResponse> listAuthor = await _authorService.AuthorsWithBooks();
             return listAuthor;
         }
 
@@ -33,8 +33,9 @@ namespace Api.Controllers
         }
 
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task Post([FromBody] AuthorDtoRequest authorDtoRequest)
         {
+            await _authorService.NewAuthor(authorDtoRequest);
         }
 
         [HttpPut("{id}")]

@@ -4,9 +4,9 @@ namespace Application.ServiceInterface
 {
     public interface  IAuthorService
     {
-        Task<ICollection<AuthorDto>>Authors();
-        Task<ICollection<AuthorDto>> AuthorsWithBooks();
-
+        Task<ICollection<AuthorDtoResponse>>Authors();
+        Task<ICollection<AuthorDtoResponse>> AuthorsWithBooks();
+        Task NewAuthor(AuthorDtoRequest authorDtoRequest);
 
     }
 }

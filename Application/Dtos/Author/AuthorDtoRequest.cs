@@ -1,7 +1,6 @@
 ﻿namespace Application.Dtos.Author
 {
-    public  class CreateAuthorDto
+    public record AuthorDtoRequest(string Name)
     {
-        
     }
 }

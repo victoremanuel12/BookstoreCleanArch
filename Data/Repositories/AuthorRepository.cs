@@ -12,8 +12,14 @@ namespace Infra.Data.Repositories
         {
             _context = context;
         }
+        public async Task Create (Author author)
+        {
+            _context.Authors.Add(author);
+            await _context.SaveChangesAsync();
 
-        async  Task<ICollection<Author>> IAuthorRepository.GetAll()
+        }
+
+        public async  Task<ICollection<Author>>GetAll()
         {
             return await _context.Authors.ToListAsync();
         }

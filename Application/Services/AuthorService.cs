@@ -16,18 +16,22 @@ namespace Application.Services
             _authorRepository = authorRepository;
             _mapper = mapper;
         }
-
-        public async Task<ICollection<AuthorDto>> Authors()
+        public async Task NewAuthor(AuthorDtoRequest authorDtoRequest)
+        {
+            Author author = _mapper.Map<Author>(authorDtoRequest);
+            await _authorRepository.Create(author);
+        }
+        public async Task<ICollection<AuthorDtoResponse>> Authors()
         {
             ICollection<Author> listAutor = await _authorRepository.GetAll();
-            ICollection<AuthorDto> listAuthorDto = _mapper.Map<ICollection<AuthorDto>>(listAutor);
+            ICollection<AuthorDtoResponse> listAuthorDto = _mapper.Map<ICollection<AuthorDtoResponse>>(listAutor);
             return listAuthorDto;
         }
 
-        public async Task<ICollection<AuthorDto>> AuthorsWithBooks()
+        public async Task<ICollection<AuthorDtoResponse>> AuthorsWithBooks()
         {
             ICollection<Author> authorWithBooks = await _authorRepository.GetAllWithBooks();
-            ICollection<AuthorDto> authorWithBookDto = _mapper.Map<ICollection<AuthorDto>>(authorWithBooks);
+            ICollection<AuthorDtoResponse> authorWithBookDto = _mapper.Map<ICollection<AuthorDtoResponse>>(authorWithBooks);
             return authorWithBookDto;
         }
     }

@@ -6,6 +6,6 @@ namespace Application.Interfaces
     {
         Task<ICollection<Author>> GetAll();
         Task<ICollection<Author>> GetAllWithBooks();
-
+        Task Create(Author author);
     }
 }

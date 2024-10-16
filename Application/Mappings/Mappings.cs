@@ -8,7 +8,9 @@ namespace Application.Mappings
     {
         public Mappings()
         {
-            CreateMap<Author, AuthorDto>().ReverseMap();
+            CreateMap<Author, AuthorDtoResponse>().ReverseMap();
+            CreateMap<Author, AuthorDtoRequest>().ReverseMap();
+
         }
     }
 }
