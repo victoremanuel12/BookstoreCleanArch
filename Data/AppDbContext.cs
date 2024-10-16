@@ -9,6 +9,8 @@ namespace Infra.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            // Book
             modelBuilder.Entity<Book>(builder =>
             {
                 builder.ToTable("book");
@@ -23,7 +25,6 @@ namespace Infra.Data
                     .HasColumnType("varchar(255)")
                     .IsRequired();
 
-                // Relacionamentos
                 builder.HasOne(b => b.Review)
                        .WithOne(r => r.Book)
                        .HasForeignKey<Review>(r => r.BookId)
@@ -55,7 +56,7 @@ namespace Infra.Data
                   .OnDelete(DeleteBehavior.Cascade);
             });
 
-            // Mapeamento para outras entidades
+            // Publisher
             modelBuilder.Entity<Publisher>(builder =>
             {
                 builder.ToTable("publisher");
@@ -69,6 +70,8 @@ namespace Infra.Data
                    .IsRequired();
             });
 
+
+            // Author
             modelBuilder.Entity<Author>(builder =>
             {
                 builder.ToTable("author");
@@ -86,6 +89,8 @@ namespace Infra.Data
                     .IsRequired();
             });
 
+
+            // Review
             modelBuilder.Entity<Review>(builder =>
             {
                 builder.ToTable("review");
