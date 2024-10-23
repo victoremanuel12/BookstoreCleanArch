@@ -190,12 +190,18 @@
           "Domain": "1.0.0"
         },
         "runtime": {
-          "Application.dll": {}
+          "Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Domain/1.0.0": {
         "runtime": {
-          "Domain.dll": {}
+          "Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Infra.Data/1.0.0": {
@@ -205,7 +211,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.8"
         },
         "runtime": {
-          "Infra.Data.dll": {}
+          "Infra.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Infra.IoC/1.0.0": {
@@ -217,7 +226,10 @@
           "Npgsql": "8.0.4"
         },
         "runtime": {
-          "Infra.IoC.dll": {}
+          "Infra.IoC.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

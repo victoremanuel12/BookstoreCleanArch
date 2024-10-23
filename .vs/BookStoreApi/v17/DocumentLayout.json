@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\",
   "Documents": [
     {
@@ -29,6 +30,17 @@
     {
       "AbsoluteMoniker": "D:0:0:{806F6B46-FCAF-4AE1-9438-766187BA790E}|Domain\\Domain.csproj|c:\\users\\victo\\onedrive\\documentos\\estudos\\c#\\bookstorecleanarch\\bookstorecleanarch\\domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{806F6B46-FCAF-4AE1-9438-766187BA790E}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\data\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|solutionrelative:data\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +50,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 5,
+=======
+          "SelectedChildIndex": 1,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< Updated upstream
               "Title": "AuthorDtoResponse.cs",
               "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Application\\Dtos\\Author\\AuthorDtoResponse.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Author\\AuthorDtoResponse.cs",
@@ -103,11 +120,22 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T02:40:10.877Z",
+=======
+              "Title": "AuthorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Data\\Repositories\\AuthorRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\AuthorRepository.cs",
+              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Data\\Repositories\\AuthorRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\AuthorRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T17:20:43.712Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "AuthorController.cs",
               "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Api\\Controllers\\AuthorController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\AuthorController.cs",
@@ -129,6 +157,16 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwBkAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T02:35:21.43Z",
+=======
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T11:26:07.094Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             }
           ]
