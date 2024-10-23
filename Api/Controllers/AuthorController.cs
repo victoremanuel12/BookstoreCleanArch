@@ -1,5 +1,7 @@
-﻿using Application.Dtos.Author;
+﻿using Api.Extensions;
+using Application.Dtos.Author;
 using Application.ServiceInterface;
+using Domain.Abstraction;
 using Microsoft.AspNetCore.Mvc;
 namespace Api.Controllers
 {
@@ -14,10 +16,10 @@ namespace Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<AuthorDtoResponse>> Get()
+        public async Task<IResult> Get()
         {
-            IEnumerable<AuthorDtoResponse> listAuthor = await _authorService.Authors();
-            return listAuthor;
+            Result<IEnumerable<AuthorDtoResponse>> listAuthor = await _authorService.Authors();
+            return Results.Extensions.MapResult(listAuthor);
         }
         [HttpGet("books")]
         public async Task<IEnumerable<AuthorDtoResponse>> GetAllWithBooks()

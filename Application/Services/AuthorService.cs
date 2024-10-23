@@ -2,6 +2,7 @@
 using Application.Interfaces;
 using Application.ServiceInterface;
 using AutoMapper;
+using Domain.Abstraction;
 using Domain.Entities;
 
 namespace Application.Services
@@ -21,11 +22,17 @@ namespace Application.Services
             Author author = _mapper.Map<Author>(authorDtoRequest);
             await _authorRepository.Create(author);
         }
-        public async Task<IEnumerable<AuthorDtoResponse>> Authors()
+        public async Task<Result<IEnumerable<AuthorDtoResponse>>> Authors()
         {
             IEnumerable<Author> listAutor = await _authorRepository.GetAll();
+            if (listAutor.Count() == 0)
+            {
+                return Result<IEnumerable<AuthorDtoResponse>>.Failaure(
+                    Error.Validation("AuthorService.Authors", "Nenhum autor encontrado")
+                );
+            }
             IEnumerable<AuthorDtoResponse> listAuthorDto = _mapper.Map<IEnumerable<AuthorDtoResponse>>(listAutor);
-            return listAuthorDto;
+            return Result<IEnumerable<AuthorDtoResponse>>.Succss(listAuthorDto);
         }
 
         public async Task<IEnumerable<AuthorDtoResponse>> AuthorsWithBooks()
