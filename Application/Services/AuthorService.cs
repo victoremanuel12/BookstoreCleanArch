@@ -1,4 +1,5 @@
 ﻿using Application.Dtos.Author;
+using Application.Errors;
 using Application.Interfaces;
 using Application.ServiceInterface;
 using AutoMapper;
@@ -25,14 +26,12 @@ namespace Application.Services
         public async Task<Result<IEnumerable<AuthorDtoResponse>>> Authors()
         {
             IEnumerable<Author> listAutor = await _authorRepository.GetAll();
-            if (listAutor.Count() == 0)
+            if (listAutor.Count() < 5)
             {
-                return Result<IEnumerable<AuthorDtoResponse>>.Failaure(
-                    Error.Validation("AuthorService.Authors", "Nenhum autor encontrado")
-                );
+                return Result<IEnumerable<AuthorDtoResponse>>.Failure(AuthorsErrors.NotFound);
             }
             IEnumerable<AuthorDtoResponse> listAuthorDto = _mapper.Map<IEnumerable<AuthorDtoResponse>>(listAutor);
-            return Result<IEnumerable<AuthorDtoResponse>>.Succss(listAuthorDto);
+            return Result<IEnumerable<AuthorDtoResponse>>.Success(listAuthorDto);
         }
 
         public async Task<IEnumerable<AuthorDtoResponse>> AuthorsWithBooks()

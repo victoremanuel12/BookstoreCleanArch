@@ -17,8 +17,8 @@
             IsSuccess = false;
             Error = Error.None;
         }
-        public static Result<T> Succss(T value) => new (value);
-        public static Result<T> Failaure(Error error) => new (error);
+        public static Result<T> Success(T value) => new (value);
+        public static Result<T> Failure(Error error) => new (error);
     }
     
     

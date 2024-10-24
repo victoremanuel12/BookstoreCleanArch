@@ -3,24 +3,6 @@ C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Da
 C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfoInputs.cache
 C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfo.cs
 C:\Users\Victor Emanuel\source\repos\BookStoreApi\Data\obj\Debug\net8.0\Infra.Data.csproj.CoreCompileInputs.cache
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.deps.json
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.runtimeconfig.json
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.dll
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.pdb
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Domain.dll
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Domain.pdb
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.csproj.AssemblyReference.cache
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfoInputs.cache
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfo.cs
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.csproj.CoreCompileInputs.cache
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.sourcelink.json
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.csproj.Up2Date
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.dll
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\refint\Infra.Data.dll
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.pdb
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.genruntimeconfig.cache
-C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\ref\Infra.Data.dll
 C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.deps.json
 C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.runtimeconfig.json
 C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.dll
@@ -39,3 +21,21 @@ C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanA
 C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.pdb
 C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.genruntimeconfig.cache
 C:\Users\victo\OneDrive\Documentos\Estudos\C#\BookstoreCleanArch\BookstoreCleanArch\Data\obj\Debug\net8.0\ref\Infra.Data.dll
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.deps.json
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.runtimeconfig.json
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.dll
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Infra.Data.pdb
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Domain.dll
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\bin\Debug\net8.0\Domain.pdb
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.csproj.AssemblyReference.cache
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfoInputs.cache
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.AssemblyInfo.cs
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.sourcelink.json
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.csproj.Up2Date
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.dll
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\refint\Infra.Data.dll
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.pdb
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\Infra.Data.genruntimeconfig.cache
+C:\Users\Victor Emanuel\Documents\Estudos\C#\BookStoreApp\BookstoreCleanArch\Data\obj\Debug\net8.0\ref\Infra.Data.dll
