@@ -4,7 +4,7 @@ namespace Api.Extensions
 {
     public static class ResultExtensions
     {
-        public static IResult MapResult<T>(this IResultExtensions resultExtensions, Result<T> result)
+        public static IResult MapResult<T>(this Result<T> result)
         {
             if (result.IsSuccess)
             {
@@ -27,8 +27,7 @@ namespace Api.Extensions
                     extensions: new Dictionary<string, object?>
                         {
                             {"errors", new []{error} }
-                        }
-                    ),
+                        }),
 
             };
         }

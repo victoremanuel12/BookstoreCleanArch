@@ -1,8 +1,8 @@
 ﻿using Api.Extensions;
 using Application.Dtos.Author;
 using Application.ServiceInterface;
-using Domain.Abstraction;
 using Microsoft.AspNetCore.Mvc;
+
 namespace Api.Controllers
 {
     [Route("api/[controller]")]
@@ -18,14 +18,14 @@ namespace Api.Controllers
         [HttpGet]
         public async Task<IResult> Get()
         {
-            Result<IEnumerable<AuthorDtoResponse>> listAuthor = await _authorService.Authors();
-            return Results.Extensions.MapResult(listAuthor);
+            var result = await _authorService.Authors();
+            return result.MapResult();
         }
         [HttpGet("books")]
-        public async Task<IEnumerable<AuthorDtoResponse>> GetAllWithBooks()
+        public async Task<IResult> GetAllWithBooks()
         {
-            IEnumerable<AuthorDtoResponse> listAuthor = await _authorService.AuthorsWithBooks();
-            return listAuthor;
+            var result = await _authorService.AuthorsWithBooks();
+            return result.MapResult();
         }
 
         [HttpGet("{id}")]
