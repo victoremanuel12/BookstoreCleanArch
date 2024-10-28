@@ -31,21 +31,21 @@ namespace Infra.Data
                        .HasConstraintName("book_id")
                        .OnDelete(DeleteBehavior.Cascade);
 
-                builder.HasMany(b => b.Authors)
-                    .WithMany(a => a.Books)
-                    .UsingEntity<Dictionary<string, object>>(
-                        "book_author",
-                        j => j
-                            .HasOne<Author>()
-                            .WithMany()
-                            .HasForeignKey("author_id")
-                            .OnDelete(DeleteBehavior.Cascade),
-                        j => j
-                            .HasOne<Book>()
-                            .WithMany()
-                            .HasForeignKey("book_id")
-                            .OnDelete(DeleteBehavior.Cascade)
-                    );
+                //builder.HasMany(b => b.Authors)
+                //    .WithMany(a => a.Books)
+                //    .UsingEntity<Dictionary<string, object>>(
+                //        "book_author",
+                //        j => j
+                //            .HasOne<Author>()
+                //            .WithMany()
+                //            .HasForeignKey("author_id")
+                //            .OnDelete(DeleteBehavior.Cascade),
+                //        j => j
+                //            .HasOne<Book>()
+                //            .WithMany()
+                //            .HasForeignKey("book_id")
+                //            .OnDelete(DeleteBehavior.Cascade)
+                //    );
                 builder.Property(b => b.PublisherId)
                 .HasColumnName("publisher_id");
 
@@ -56,20 +56,23 @@ namespace Infra.Data
                   .OnDelete(DeleteBehavior.Cascade);
             });
 
-            // Publisher
-            modelBuilder.Entity<Publisher>(builder =>
-            {
-                builder.ToTable("publisher");
-                builder.HasKey(p => p.Id);
-                builder.Property(p => p.Id)
-                  .HasColumnName("id")
-                  .IsRequired();
-                builder.Property(p => p.Name)
-                   .HasColumnName("name")
-                   .HasColumnType("varchar(255)")
-                   .IsRequired();
-            });
-
+            //Book_Author
+            modelBuilder.Entity<Book>()
+            .HasMany(b => b.Authors)
+            .WithMany(a => a.Books)
+            .UsingEntity<Dictionary<string, object>>(
+                "book_author", 
+                j => j
+                    .HasOne<Author>()
+                    .WithMany()
+                    .HasForeignKey("author_id")
+                    .OnDelete(DeleteBehavior.Cascade),
+                j => j
+                    .HasOne<Book>()
+                    .WithMany()
+                    .HasForeignKey("book_id")
+                    .OnDelete(DeleteBehavior.Cascade)
+            );
 
             // Author
             modelBuilder.Entity<Author>(builder =>
@@ -87,6 +90,19 @@ namespace Infra.Data
                     .HasColumnName("name")
                     .HasColumnType("varchar(255)")
                     .IsRequired();
+            });
+            // Publisher
+            modelBuilder.Entity<Publisher>(builder =>
+            {
+                builder.ToTable("publisher");
+                builder.HasKey(p => p.Id);
+                builder.Property(p => p.Id)
+                  .HasColumnName("id")
+                  .IsRequired();
+                builder.Property(p => p.Name)
+                   .HasColumnName("name")
+                   .HasColumnType("varchar(255)")
+                   .IsRequired();
             });
 
 

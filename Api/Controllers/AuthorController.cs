@@ -1,6 +1,7 @@
 ﻿using Api.Extensions;
 using Application.Dtos.Author;
 using Application.ServiceInterface;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
@@ -19,13 +20,13 @@ namespace Api.Controllers
         public async Task<IResult> Get()
         {
             var result = await _authorService.Authors();
-            return result.MapResult();
+            return Results.Extensions.MapResult(result);
         }
         [HttpGet("books")]
         public async Task<IResult> GetAllWithBooks()
         {
             var result = await _authorService.AuthorsWithBooks();
-            return result.MapResult();
+            return Results.Extensions.MapResult(result);
         }
 
         [HttpGet("{id}")]

@@ -21,13 +21,13 @@ namespace Infra.Data.Repositories
 
         public async  Task<IEnumerable<Author>>GetAll()
         {
-            return await _context.Authors.ToListAsync();
+            return await _context.Authors.AsNoTracking().ToListAsync();
         }
     
 
         public async Task<IEnumerable<Author>> GetAllWithBooks()
         {
-            return await  _context.Authors.Include(b => b.Books).ToListAsync();
+            return await  _context.Authors.Include(b => b.Books).AsNoTracking().ToListAsync();
                  
         }
 

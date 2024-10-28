@@ -10,6 +10,6 @@
         public Publisher Publisher { get; set; }
 
         public Review Review { get; set; }
-        public ICollection<Author> Authors { get; set; }
+        public ICollection<Author> Authors { get; set; } = new List<Author>();
     }
 }

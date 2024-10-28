@@ -6,8 +6,8 @@ namespace Application.ServiceInterface
     public interface  IAuthorService
     {
         Task<Result<IEnumerable<AuthorDtoResponse>>> Authors();
-        Task<Result<IEnumerable<AuthorDtoResponse>>> AuthorsWithBooks();
-        Task NewAuthor(AuthorDtoRequest authorDtoRequest);
+        Task<Result<IEnumerable<AuthorWithBooksDtoRequest>>> AuthorsWithBooks();
+        Task<Result<long>> NewAuthor(AuthorDtoRequest authorDtoRequest);
 
     }
 }
