@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\application\\dtos\\book\\bookdtoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|solutionrelative:application\\dtos\\book\\bookdtoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\application\\dtos\\author\\authorwithbooksdtorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|solutionrelative:application\\dtos\\author\\authorwithbooksdtorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\application\\dtos\\author\\authordtoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|solutionrelative:application\\dtos\\author\\authordtoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\application\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|solutionrelative:application\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\application\\dtos\\book\\bookdtoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|solutionrelative:application\\dtos\\book\\bookdtoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\data\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|solutionrelative:data\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\application\\dtos\\author\\authordtoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|solutionrelative:application\\dtos\\author\\authordtoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\application\\mappings\\mappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,14 +43,6 @@
       "RelativeMoniker": "D:0:0:{328AD995-5832-4387-AA3C-4C299E510EB1}|Infra.IoC\\Infra.IoC.csproj|solutionrelative:infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\data\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|solutionrelative:data\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\application\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|solutionrelative:application\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|c:\\users\\victor emanuel\\documents\\estudos\\c#\\bookstoreapp\\bookstorecleanarch\\application\\serviceinterface\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{459696EC-E406-43F1-9B61-368106A2F381}|Application\\Application.csproj|solutionrelative:application\\serviceinterface\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -58,63 +58,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthorWithBooksDtoRequest.cs",
               "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Dtos\\Author\\AuthorWithBooksDtoRequest.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Author\\AuthorWithBooksDtoRequest.cs",
               "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Dtos\\Author\\AuthorWithBooksDtoRequest.cs",
               "RelativeToolTip": "Application\\Dtos\\Author\\AuthorWithBooksDtoRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T21:09:45.972Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthorDtoResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Dtos\\Author\\AuthorDtoResponse.cs",
-              "RelativeDocumentMoniker": "Application\\Dtos\\Author\\AuthorDtoResponse.cs",
-              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Dtos\\Author\\AuthorDtoResponse.cs",
-              "RelativeToolTip": "Application\\Dtos\\Author\\AuthorDtoResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T21:09:43.741Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Mappings.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Mappings\\Mappings.cs",
-              "RelativeDocumentMoniker": "Application\\Mappings\\Mappings.cs",
-              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Mappings\\Mappings.cs*",
-              "RelativeToolTip": "Application\\Mappings\\Mappings.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T21:08:43.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Domain\\Entities\\Book.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Book.cs",
-              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Domain\\Entities\\Book.cs",
-              "RelativeToolTip": "Domain\\Entities\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T21:07:44.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BookService.cs",
               "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Services\\BookService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\BookService.cs",
@@ -127,20 +88,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "BookDtoResponse.cs",
               "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Dtos\\Book\\BookDtoResponse.cs",
               "RelativeDocumentMoniker": "Application\\Dtos\\Book\\BookDtoResponse.cs",
               "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Dtos\\Book\\BookDtoResponse.cs",
               "RelativeToolTip": "Application\\Dtos\\Book\\BookDtoResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T21:07:20.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Infra.IoC\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Infra.IoC\\DependencyInjection.cs",
@@ -153,12 +114,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Api\\Program.cs",
               "RelativeDocumentMoniker": "Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Api\\Program.cs*",
-              "RelativeToolTip": "Api\\Program.cs*",
+              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Api\\Program.cs",
+              "RelativeToolTip": "Api\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T20:54:36.415Z",
@@ -179,28 +140,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
+              "Title": "AuthorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Data\\Repositories\\AuthorRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\AuthorRepository.cs",
+              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Data\\Repositories\\AuthorRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\AuthorRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T14:36:46.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AuthorService.cs",
               "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Services\\AuthorService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\AuthorService.cs",
               "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Services\\AuthorService.cs",
               "RelativeToolTip": "Application\\Services\\AuthorService.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAEwCcAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAEwC0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T20:14:08.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Data\\Repositories\\AuthorRepository.cs",
-              "RelativeDocumentMoniker": "Data\\Repositories\\AuthorRepository.cs",
-              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Data\\Repositories\\AuthorRepository.cs",
-              "RelativeToolTip": "Data\\Repositories\\AuthorRepository.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAABsAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Domain\\Entities\\Book.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Book.cs",
+              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Domain\\Entities\\Book.cs",
+              "RelativeToolTip": "Domain\\Entities\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T14:36:46.955Z",
+              "WhenOpened": "2024-10-28T21:07:44.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Mappings.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Mappings\\Mappings.cs",
+              "RelativeDocumentMoniker": "Application\\Mappings\\Mappings.cs",
+              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Mappings\\Mappings.cs",
+              "RelativeToolTip": "Application\\Mappings\\Mappings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T21:08:43.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthorDtoResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Dtos\\Author\\AuthorDtoResponse.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Author\\AuthorDtoResponse.cs",
+              "ToolTip": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Dtos\\Author\\AuthorDtoResponse.cs",
+              "RelativeToolTip": "Application\\Dtos\\Author\\AuthorDtoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T21:09:43.741Z",
               "EditorCaption": ""
             },
             {
