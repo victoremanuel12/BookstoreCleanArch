@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|c:\\users\\victo\\onedrive\\documentos\\estudos\\c#\\bookstorecleanarch\\bookstorecleanarch\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|c:\\users\\victo\\onedrive\\documentos\\estudos\\c#\\bookstorecleanarch\\bookstorecleanarch\\api\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|solutionrelative:api\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|c:\\users\\victo\\onedrive\\documentos\\estudos\\c#\\bookstorecleanarch\\bookstorecleanarch\\data\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1008A940-C055-4884-BA74-005A1868A47E}|Data\\Infra.Data.csproj|solutionrelative:data\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|c:\\users\\victo\\onedrive\\documentos\\estudos\\c#\\bookstorecleanarch\\bookstorecleanarch\\api\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|solutionrelative:api\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|c:\\users\\victo\\onedrive\\documentos\\estudos\\c#\\bookstorecleanarch\\bookstorecleanarch\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4DC6E2-C9F2-457A-8310-DE59F06B5EFA}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Api\\Program.cs",
-              "RelativeDocumentMoniker": "Api\\Program.cs",
-              "ToolTip": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Api\\Program.cs",
-              "RelativeToolTip": "Api\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Title": "AuthorController.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Api\\Controllers\\AuthorController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\AuthorController.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Api\\Controllers\\AuthorController.cs*",
+              "RelativeToolTip": "Api\\Controllers\\AuthorController.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T01:22:18.542Z",
+              "WhenOpened": "2024-10-30T01:51:28.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ExceptionHandlingMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Api\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "RelativeDocumentMoniker": "Api\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "ToolTip": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Api\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "RelativeToolTip": "Api\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Api\\Program.cs",
+              "RelativeDocumentMoniker": "Api\\Program.cs",
+              "ToolTip": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Api\\Program.cs*",
+              "RelativeToolTip": "Api\\Program.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T01:20:48.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Data\\Repositories\\AuthorRepository.cs",
-              "RelativeDocumentMoniker": "Data\\Repositories\\AuthorRepository.cs",
-              "ToolTip": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Data\\Repositories\\AuthorRepository.cs",
-              "RelativeToolTip": "Data\\Repositories\\AuthorRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T01:13:21.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthorController.cs",
-              "DocumentMoniker": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Api\\Controllers\\AuthorController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\AuthorController.cs",
-              "ToolTip": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Api\\Controllers\\AuthorController.cs",
-              "RelativeToolTip": "Api\\Controllers\\AuthorController.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAQwBYAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T01:11:45.105Z",
+              "WhenOpened": "2024-10-30T01:22:18.542Z",
               "EditorCaption": ""
             }
           ]

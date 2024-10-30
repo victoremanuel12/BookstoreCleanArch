@@ -19,6 +19,7 @@ namespace Api.Controllers
         [HttpGet]
         public async Task<IResult> Get()
         {
+            throw new NotImplementedException();
             var result = await _authorService.Authors();
             return Results.Extensions.MapResult(result);
         }
