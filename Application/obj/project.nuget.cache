@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Of9jUjfqGnY=",
+  "dgSpecHash": "okm2PnA1NzzUu49dsJ5mKcgN+/ponA37K4U4c0gnTXNyoFfOK4A8TVNZEdxQ0jwqkOAqlZnhYl2Dk8V/UjiTkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Victor Emanuel\\Documents\\Estudos\\C#\\BookStoreApp\\BookstoreCleanArch\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\victo\\OneDrive\\Documentos\\Estudos\\C#\\BookstoreCleanArch\\BookstoreCleanArch\\Application\\Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Victor Emanuel\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
-    "C:\\Users\\Victor Emanuel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Victor Emanuel\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\Victor Emanuel\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\Victor Emanuel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\victo\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
