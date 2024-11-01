@@ -361,3 +361,25 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Arquivos temporários e de build
+*.dbmdl
+*.jfm
+*.obj
+*.log
+
+# Configurações do Visual Studio
+.vs/
+*.vscode/
+
+# Cache de pacotes NuGet
+packages/
+
+# Assemblies e arquivos de configuração específicos do projeto
+**/obj/
+**/bin/
+**/Properties/AssemblyInfo.cs
+**/*.csproj.user
+**/*.suo
+**/*.user
+**/*.cache
+**/*.pdb
