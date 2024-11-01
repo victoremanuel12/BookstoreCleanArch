@@ -10,8 +10,9 @@ namespace Api.GlobalHandling
             var problemsDetails = new ProblemDetails
             {
                 Status = StatusCodes.Status500InternalServerError,
-                Title = "Server Error",
-                Detail = exception.Message
+                Title = "An unexpected error occurred",
+                Detail = exception.Message,
+                Instance = $"{httpContext.Request.Method} {httpContext.Request.Path}"
             };
             httpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
             await httpContext.Response.WriteAsJsonAsync(problemsDetails, cancellationToken);
