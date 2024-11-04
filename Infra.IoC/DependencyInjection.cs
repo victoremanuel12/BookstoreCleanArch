@@ -2,6 +2,7 @@
 using Application.Mappings;
 using Application.ServiceInterface;
 using Application.Services;
+using Domain.Interfaces;
 using Infra.Data;
 using Infra.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,7 @@ namespace Infra.IoC
                 options.UseNpgsql(connectionString);
                 options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IAuthorService, AuthorService>();
             services.AddScoped<IAuthorRepository, AuthorRepository>();
             services.AddAutoMapper(typeof(Mappings));

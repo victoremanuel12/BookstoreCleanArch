@@ -1,6 +1,6 @@
-﻿using Application.Dtos.Author;
-using Application.Dtos.Book;
-using AutoMapper;
+﻿using AutoMapper;
+using Domain.Dtos.Author;
+using Domain.Dtos.Book;
 using Domain.Entities;
 
 namespace Application.Mappings

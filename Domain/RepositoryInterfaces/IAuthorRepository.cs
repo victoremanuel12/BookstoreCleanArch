@@ -1,10 +1,10 @@
 ﻿using Domain.Entities;
-using Domain.Interfaces;
 
 namespace Application.Interfaces
 {
-    public interface IAuthorRepository : IRepository<Author>
+    public interface IAuthorRepository
     {
+        Task<IEnumerable<Author>> GetAllAsync();
         Task<IEnumerable<Author>> GetAllWithBooks();
     }
 }

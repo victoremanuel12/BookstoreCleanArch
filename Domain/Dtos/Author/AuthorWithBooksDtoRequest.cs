@@ -1,6 +1,6 @@
-﻿using Application.Dtos.Book;
+﻿using Domain.Dtos.Book;
 
-namespace Application.Dtos.Author
+namespace Domain.Dtos.Author
 {
     public record AuthorWithBooksDtoRequest(long Id, string Name, IEnumerable<BookDtoResponse> Books)
     {

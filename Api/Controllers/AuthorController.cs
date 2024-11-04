@@ -1,6 +1,6 @@
 ﻿using Api.Extensions;
-using Application.Dtos.Author;
 using Application.ServiceInterface;
+using Domain.Dtos.Author;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
@@ -28,29 +28,29 @@ namespace Api.Controllers
             return Results.Extensions.MapResult(result);
         }
 
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //[HttpGet("{id}")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
-        [HttpPost]
-        public async Task<IResult> Post([FromBody] AuthorDtoRequest authorDtoRequest)
-        {
-            var result = await _authorService.NewAuthor(authorDtoRequest);
-            return Results.Extensions.MapResult(result);
-        }
+        //[HttpPost]
+        //public async Task<IResult> Post([FromBody] AuthorDtoRequest authorDtoRequest)
+        //{
+        //    var result = await _authorService.GetAllWithBooks();
+        //    return Results.Extensions.MapResult(result);
+        //}
 
-        [HttpPut("{id}")]
-        public async Task<IResult> Put(int id, [FromBody] AuthorDtoRequest authorDtoRequest)
-        {
-            var result = await _authorService.NewAuthor(authorDtoRequest);
-            return Results.Extensions.MapResult(result);
-        }
+        //[HttpPut("{id}")]
+        //public async Task<IResult> Put(int id, [FromBody] AuthorDtoRequest authorDtoRequest)
+        //{
+        //    var result = await _authorService.GetAllWithBooks();
+        //    return Results.Extensions.MapResult(result);
+        //}
 
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }

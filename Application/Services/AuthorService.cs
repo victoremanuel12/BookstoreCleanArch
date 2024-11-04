@@ -1,9 +1,9 @@
-﻿using Application.Dtos.Author;
-using Application.Errors;
+﻿using Application.Errors;
 using Application.Interfaces;
 using Application.ServiceInterface;
 using AutoMapper;
 using Domain.Abstraction;
+using Domain.Dtos.Author;
 using Domain.Entities;
 
 namespace Application.Services
@@ -22,8 +22,8 @@ namespace Application.Services
 
         public async Task<Result<IEnumerable<AuthorDtoResponse>>> GetAll()
         {
-            IEnumerable<Author> listAutor =  await _authorRepository.GetAllAsync();
-            if (!listAutor.Any())
+            var listAutor = await _authorRepository.GetAllAsync();
+            if (listAutor.Count() == 0)
                 return Result<IEnumerable<AuthorDtoResponse>>.Failure(AuthorErrors.NotFound);
 
             IEnumerable<AuthorDtoResponse> listAuthorDto = _mapper.Map<IEnumerable<AuthorDtoResponse>>(listAutor);
@@ -40,17 +40,17 @@ namespace Application.Services
             IEnumerable<AuthorWithBooksDtoRequest> authorWithBookDto = _mapper.Map<IEnumerable<AuthorWithBooksDtoRequest>>(authorWithBooks);
             return Result<IEnumerable<AuthorWithBooksDtoRequest>>.Success(authorWithBookDto);
         }
-        public async Task<Result<AuthorDtoResponse>> NewAuthor(AuthorDtoRequest authorDtoRequest)
-        {
-            Author author = _mapper.Map<Author>(authorDtoRequest);
-            await _authorRepository.AddAsync(author);
-            AuthorDtoResponse authorresponse = _mapper.Map<AuthorDtoResponse>(author);
-            return Result<AuthorDtoResponse>.Success(authorresponse);
-        }
+        //public async task<result<authordtoresponse>> newauthor(authordtorequest authordtorequest)
+        //{
+        //    author author = _mapper.map<author>(authordtorequest);
+        //    await _authorrepository.addasync(author);
+        //    authordtoresponse authorresponse = _mapper.map<authordtoresponse>(author);
+        //    return result<authordtoresponse>.success(authorresponse);
+        //}
 
-        public Task<Result<AuthorDtoResponse>> Update(long id, AuthorDtoRequest authorDtoRequest)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<Result<AuthorDtoResponse>> Update(long id, AuthorDtoRequest authorDtoRequest)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
