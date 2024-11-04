@@ -19,23 +19,19 @@ namespace Application.Services
             _authorRepository = authorRepository;
             _mapper = mapper;
         }
-        public async Task<Result<long>> NewAuthor(AuthorDtoRequest authorDtoRequest)
+
+        public async Task<Result<IEnumerable<AuthorDtoResponse>>> GetAll()
         {
-            Author author = _mapper.Map<Author>(authorDtoRequest);
-            await _authorRepository.Create(author);
-            return Result<long>.Success(author.Id);
-        }
-        public async Task<Result<IEnumerable<AuthorDtoResponse>>> Authors()
-        {
-            IEnumerable<Author> listAutor = await _authorRepository.GetAll();
-            if (listAutor.Count() == 0)
+            IEnumerable<Author> listAutor =  await _authorRepository.GetAllAsync();
+            if (!listAutor.Any())
                 return Result<IEnumerable<AuthorDtoResponse>>.Failure(AuthorErrors.NotFound);
 
             IEnumerable<AuthorDtoResponse> listAuthorDto = _mapper.Map<IEnumerable<AuthorDtoResponse>>(listAutor);
             return Result<IEnumerable<AuthorDtoResponse>>.Success(listAuthorDto);
         }
 
-        public async Task<Result<IEnumerable<AuthorWithBooksDtoRequest>>> AuthorsWithBooks()
+
+        public async Task<Result<IEnumerable<AuthorWithBooksDtoRequest>>> GetAllWithBooks()
         {
             IEnumerable<Author> authorWithBooks = await _authorRepository.GetAllWithBooks();
             if (authorWithBooks.Count() == 0)
@@ -43,6 +39,18 @@ namespace Application.Services
 
             IEnumerable<AuthorWithBooksDtoRequest> authorWithBookDto = _mapper.Map<IEnumerable<AuthorWithBooksDtoRequest>>(authorWithBooks);
             return Result<IEnumerable<AuthorWithBooksDtoRequest>>.Success(authorWithBookDto);
+        }
+        public async Task<Result<AuthorDtoResponse>> NewAuthor(AuthorDtoRequest authorDtoRequest)
+        {
+            Author author = _mapper.Map<Author>(authorDtoRequest);
+            await _authorRepository.Add(author);
+            AuthorDtoResponse authorresponse = _mapper.Map<AuthorDtoResponse>(author);
+            return Result<AuthorDtoResponse>.Success(authorresponse);
+        }
+
+        public Task<Result<AuthorDtoResponse>> Update(long id, AuthorDtoRequest authorDtoRequest)
+        {
+            throw new NotImplementedException();
         }
     }
 }

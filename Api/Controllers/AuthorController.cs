@@ -1,7 +1,6 @@
 ﻿using Api.Extensions;
 using Application.Dtos.Author;
 using Application.ServiceInterface;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
@@ -19,14 +18,13 @@ namespace Api.Controllers
         [HttpGet]
         public async Task<IResult> Get()
         {
-            throw new NotImplementedException();
-            var result = await _authorService.Authors();
+            var result = await _authorService.GetAll();
             return Results.Extensions.MapResult(result);
         }
         [HttpGet("books")]
         public async Task<IResult> GetAllWithBooks()
         {
-            var result = await _authorService.AuthorsWithBooks();
+            var result = await _authorService.GetAllWithBooks();
             return Results.Extensions.MapResult(result);
         }
 
@@ -37,14 +35,17 @@ namespace Api.Controllers
         }
 
         [HttpPost]
-        public async Task Post([FromBody] AuthorDtoRequest authorDtoRequest)
+        public async Task<IResult> Post([FromBody] AuthorDtoRequest authorDtoRequest)
         {
-            await _authorService.NewAuthor(authorDtoRequest);
+            var result = await _authorService.NewAuthor(authorDtoRequest);
+            return Results.Extensions.MapResult(result);
         }
 
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IResult> Put(int id, [FromBody] AuthorDtoRequest authorDtoRequest)
         {
+            var result = await _authorService.NewAuthor(authorDtoRequest);
+            return Results.Extensions.MapResult(result);
         }
 
         [HttpDelete("{id}")]
