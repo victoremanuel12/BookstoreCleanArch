@@ -1,6 +1,5 @@
 ﻿using Api.Extensions;
 using Application.ServiceInterface;
-using Domain.Dtos.Author;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
