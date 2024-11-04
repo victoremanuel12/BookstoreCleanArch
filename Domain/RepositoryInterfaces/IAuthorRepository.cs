@@ -6,8 +6,9 @@ namespace Application.Interfaces
     {
         Task<IEnumerable<Author>> GetAllAsync();
         Task<IEnumerable<Author>> GetAllWithBooks();
-        Task Create(Author author);
-        Task Update(Author author);
-        Task Disable(Author author);
+        Task<Author> GetByIdAsync(Author author);
+        Task CreateAsync(Author author);
+        Task UpdateAsync(Author author);
+        Task DisableAsync(Author author);
     }
 }

@@ -22,7 +22,7 @@ namespace Infra.Data.Repositories
             return await _repository.Get().Include(c => c.Books).ToListAsync();
         }
 
-        public async Task Create(Author author)
+        public async Task CreateAsync(Author author)
         {
             await _repository.AddAsync(author);
         }
@@ -32,12 +32,12 @@ namespace Infra.Data.Repositories
             return authorEntitiy;
         }
 
-        public Task Update(Author author)
+        public Task UpdateAsync(Author author)
         {
             return _repository.UpdateAsync(author);
         }
 
-        public async Task Disable(Author author)
+        public async Task DisableAsync(Author author)
         {
             author.IsActive = author.IsActive;
             await _repository.UpdateAsync(author);
