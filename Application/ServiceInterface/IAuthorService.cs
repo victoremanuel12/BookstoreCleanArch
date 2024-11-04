@@ -7,8 +7,10 @@ namespace Application.ServiceInterface
     {
         Task<Result<IEnumerable<AuthorDtoResponse>>> GetAll();
         Task<Result<IEnumerable<AuthorWithBooksDtoRequest>>> GetAllWithBooks();
-        //Task<Result<AuthorDtoResponse>> NewAuthor(AuthorDtoRequest authorDtoRequest);
-        //Task<Result<AuthorDtoResponse>> Update(long id, AuthorDtoRequest authorDtoRequest);
+
+        Task<Result<AuthorDtoResponse>> Create(AuthorDtoRequest authorDtoRequest);
+        Task<Result<AuthorDtoResponse>> Update(AuthorDtoRequest authorDtoRequest);
+        Task<Result<AuthorDtoResponse>> Diseble(AuthorDtoRequest authorDtoRequest);
 
     }
 }
