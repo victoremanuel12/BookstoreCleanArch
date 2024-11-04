@@ -4,21 +4,13 @@ namespace Domain.Interfaces
 {
     public interface IRepository<T>
     {
-        void Add(T objModel);
-        void AddRange(IEnumerable<T> objModel);
-        T? GetId(int id);
-        Task<T?> GetIdAsync(int id);
-        T? Get(Expression<Func<T, bool>> predicate);
-        Task<T?> GetAsync(Expression<Func<T, bool>> predicate);
-        IEnumerable<T> GetList(Expression<Func<T, bool>> predicate);
-        Task<IEnumerable<T>> GetListAsync(Expression<Func<T, bool>> predicate);
-        IEnumerable<T> GetAll();
+        IQueryable<T> Get();
         Task<IEnumerable<T>> GetAllAsync();
-        int Count();
-        Task<int> CountAsync();
-        void Update(T objModel);
-        void Remove(T objModel);
+        Task<T> GetByIdAsync(Expression<Func<T, bool>> predicate);
+        Task AddAsync(T entity);
+        Task UpdateAsync(T entity);
+        Task DeleteAsync(T entity);
         void Dispose();
-
+      
     }
 }

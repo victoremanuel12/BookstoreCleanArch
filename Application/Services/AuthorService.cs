@@ -43,7 +43,7 @@ namespace Application.Services
         public async Task<Result<AuthorDtoResponse>> NewAuthor(AuthorDtoRequest authorDtoRequest)
         {
             Author author = _mapper.Map<Author>(authorDtoRequest);
-            await _authorRepository.Add(author);
+            await _authorRepository.AddAsync(author);
             AuthorDtoResponse authorresponse = _mapper.Map<AuthorDtoResponse>(author);
             return Result<AuthorDtoResponse>.Success(authorresponse);
         }
