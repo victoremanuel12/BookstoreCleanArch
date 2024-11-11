@@ -1,5 +1,4 @@
-﻿using Application.Interfaces;
-using Application.Mappings;
+﻿using Application.Mappings;
 using Application.ServiceInterface;
 using Application.Services;
 using Domain.Interfaces;
@@ -22,9 +21,13 @@ namespace Infra.IoC
                 options.UseNpgsql(connectionString);
                 options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IAuthorService, AuthorService>();
+
+
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IAuthorRepository, AuthorRepository>();
+            services.AddScoped<IReviewRepository, ReviewRepository>();
             services.AddAutoMapper(typeof(Mappings));
             return services;
         }

@@ -1,5 +1,5 @@
-﻿using Domain.Abstraction;
-using Domain.Dtos.Author;
+﻿using Application.Dtos.Author;
+using Domain.Abstraction;
 
 namespace Application.ServiceInterface
 {
@@ -7,10 +7,9 @@ namespace Application.ServiceInterface
     {
         Task<Result<IEnumerable<AuthorDtoResponse>>> GetAll();
         Task<Result<IEnumerable<AuthorWithBooksDtoRequest>>> GetAllWithBooks();
-
         Task<Result<AuthorDtoResponse>> Create(AuthorDtoRequest authorDtoRequest);
         Task<Result<AuthorDtoResponse>> Update(AuthorDtoRequest authorDtoRequest);
-        Task<Result<AuthorDtoResponse>> Diseble(AuthorDtoRequest authorDtoRequest);
+        Task<Result<AuthorDtoResponse>> Diseble(AuthorDisableDto authorDisableDto);
 
     }
 }

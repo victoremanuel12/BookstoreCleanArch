@@ -1,10 +1,10 @@
-﻿using Application.Errors;
-using Application.Interfaces;
+﻿using Application.Dtos.Author;
+using Application.Errors;
 using Application.ServiceInterface;
 using AutoMapper;
 using Domain.Abstraction;
-using Domain.Dtos.Author;
 using Domain.Entities;
+using Domain.Interfaces;
 
 namespace Application.Services
 {
@@ -12,17 +12,20 @@ namespace Application.Services
     {
         public readonly IAuthorRepository _authorRepository;
         private readonly IMapper _mapper;
+        private readonly IUnitOfWork _unitOfWork;
 
 
-        public AuthorService(IAuthorRepository authorRepository, IMapper mapper)
+
+        public AuthorService(IAuthorRepository authorRepository, IMapper mapper, IUnitOfWork unitOfWork)
         {
             _authorRepository = authorRepository;
             _mapper = mapper;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<Result<IEnumerable<AuthorDtoResponse>>> GetAll()
         {
-            var listAutor = await _authorRepository.GetAllAsync();
+            var listAutor = await _unitOfWork.AuthorRepository.GetAllAsync();
             if (listAutor.Count() == 0)
                 return Result<IEnumerable<AuthorDtoResponse>>.Failure(AuthorErrors.NotFound);
 
@@ -33,7 +36,7 @@ namespace Application.Services
 
         public async Task<Result<IEnumerable<AuthorWithBooksDtoRequest>>> GetAllWithBooks()
         {
-            IEnumerable<Author> authorWithBooks = await _authorRepository.GetAllWithBooks();
+            IEnumerable<Author> authorWithBooks = await _unitOfWork.AuthorRepository.GetAllWithBooks();
             if (authorWithBooks.Count() == 0)
                 return Result<IEnumerable<AuthorWithBooksDtoRequest>>.Failure(AuthorErrors.NotFound);
 
@@ -44,21 +47,25 @@ namespace Application.Services
         public async Task<Result<AuthorDtoResponse>> Update(AuthorDtoRequest authorDtoRequest)
         {
             Author author = _mapper.Map<Author>(authorDtoRequest);
-            Author authorEntity = await _authorRepository.GetByIdAsync(author);
+            Author authorEntity = await _unitOfWork.AuthorRepository.GetByIdAsync(author);
             if (authorEntity is null)
                 return Result<AuthorDtoResponse>.Failure(AuthorErrors.NotFound);
-            await _authorRepository.UpdateAsync(authorEntity);
+            _mapper.Map(authorDtoRequest, authorEntity);
+            _unitOfWork.AuthorRepository.Update(authorEntity);
+            await _unitOfWork.CommitAsync();
             AuthorDtoResponse authorDtoResponse = _mapper.Map<AuthorDtoResponse>(authorEntity);
             return Result<AuthorDtoResponse>.Success(authorDtoResponse);
 
         }
-        public async Task<Result<AuthorDtoResponse>> Diseble(AuthorDtoRequest authorDtoRequest)
+        public async Task<Result<AuthorDtoResponse>> Diseble(AuthorDisableDto authorDisableDto)
         {
-            Author author = _mapper.Map<Author>(authorDtoRequest);
-            Author authorEntity = await _authorRepository.GetByIdAsync(author);
+            Author author = _mapper.Map<Author>(authorDisableDto);
+            Author authorEntity = await _unitOfWork.AuthorRepository.GetByIdAsync(author);
             if (authorEntity is null)
                 return Result<AuthorDtoResponse>.Failure(AuthorErrors.NotFound);
-            await _authorRepository.DisableAsync(authorEntity);
+            _mapper.Map(authorDisableDto, authorEntity);
+            _authorRepository.Disable(authorEntity);
+            await _unitOfWork.CommitAsync();
             AuthorDtoResponse authorDtoResponse = _mapper.Map<AuthorDtoResponse>(authorEntity);
             return Result<AuthorDtoResponse>.Success(authorDtoResponse);
 
@@ -72,5 +79,7 @@ namespace Application.Services
             return Result<AuthorDtoResponse>.Success(authorDtoResponse);
 
         }
+
+
     }
 }

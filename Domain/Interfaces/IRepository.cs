@@ -8,9 +8,11 @@ namespace Domain.Interfaces
         Task<IEnumerable<T>> GetAllAsync();
         Task<T> GetByIdAsync(Expression<Func<T, bool>> predicate);
         Task AddAsync(T entity);
-        Task UpdateAsync(T entity);
-        Task DeleteAsync(T entity);
-        void Dispose();
-      
+        Task AddRangeAsync(IEnumerable<T> entity);
+        void Update(T entity);
+        void Delete(T entity);
+
+
+
     }
 }

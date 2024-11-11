@@ -1,4 +1,5 @@
 ﻿using Api.Extensions;
+using Application.Dtos.Author;
 using Application.ServiceInterface;
 using Microsoft.AspNetCore.Mvc;
 
@@ -39,13 +40,20 @@ namespace Api.Controllers
         //    var result = await _authorService.GetAllWithBooks();
         //    return Results.Extensions.MapResult(result);
         //}
+        [HttpPut("{id}")]
+        public async Task<IResult> Put(int id, [FromBody] AuthorDtoRequest authorDtoRequest)
+        {
+            var result = await _authorService.Update(authorDtoRequest);
+            return Results.Extensions.MapResult(result);
+        }
 
-        //[HttpPut("{id}")]
-        //public async Task<IResult> Put(int id, [FromBody] AuthorDtoRequest authorDtoRequest)
-        //{
-        //    var result = await _authorService.GetAllWithBooks();
-        //    return Results.Extensions.MapResult(result);
-        //}
+        [HttpPut("{id}/desable")]
+        public async Task<IResult> Disable(int id, [FromBody] AuthorDisableDto authorDisableDto)
+        {
+            var result = await _authorService.Diseble(authorDisableDto);
+            return Results.Extensions.MapResult(result);
+        }
+    
 
         //[HttpDelete("{id}")]
         //public void Delete(int id)

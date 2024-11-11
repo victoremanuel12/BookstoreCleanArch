@@ -1,10 +1,10 @@
-﻿using System.Linq.Expressions;
-using Domain.Interfaces;
+﻿using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace Infra.Data.Repositories
 {
-    public  class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
     {
         private readonly AppDbContext _context;
 
@@ -30,24 +30,20 @@ namespace Infra.Data.Repositories
         public async Task AddAsync(T entity)
         {
             await _context.Set<T>().AddAsync(entity);
-            await _context.SaveChangesAsync();
+        }
+        public async Task AddRangeAsync(IEnumerable<T> entity)
+        {
+            await _context.Set<T>().AddRangeAsync(entity);
         }
 
-        public async Task UpdateAsync(T entity)
+        public void Update(T entity)
         {
             _context.Entry(entity).State = EntityState.Modified;
-            _context.Set<T>().Update(entity);
-            await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(T entity)
+        public void Delete(T entity)
         {
             _context.Set<T>().Remove(entity);
-            await _context.SaveChangesAsync();
-        }
-        public void Dispose()
-        {
-            _context.Dispose();
         }
     }
 }

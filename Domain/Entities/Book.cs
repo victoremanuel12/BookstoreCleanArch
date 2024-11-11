@@ -1,8 +1,7 @@
 ﻿namespace Domain.Entities
 {
-    public class Book
+    public class Book : BaseEntity
     {
-        public long Id { get; set; }
         public string Title { get; set; } = "";
 
         public long PublisherId { get; set; }

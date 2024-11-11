@@ -31,21 +31,6 @@ namespace Infra.Data
                        .HasConstraintName("book_id")
                        .OnDelete(DeleteBehavior.Cascade);
 
-                //builder.HasMany(b => b.Authors)
-                //    .WithMany(a => a.Books)
-                //    .UsingEntity<Dictionary<string, object>>(
-                //        "book_author",
-                //        j => j
-                //            .HasOne<Author>()
-                //            .WithMany()
-                //            .HasForeignKey("author_id")
-                //            .OnDelete(DeleteBehavior.Cascade),
-                //        j => j
-                //            .HasOne<Book>()
-                //            .WithMany()
-                //            .HasForeignKey("book_id")
-                //            .OnDelete(DeleteBehavior.Cascade)
-                //    );
                 builder.Property(b => b.PublisherId)
                 .HasColumnName("publisher_id");
 
@@ -61,7 +46,7 @@ namespace Infra.Data
             .HasMany(b => b.Authors)
             .WithMany(a => a.Books)
             .UsingEntity<Dictionary<string, object>>(
-                "book_author", 
+                "book_author",
                 j => j
                     .HasOne<Author>()
                     .WithMany()
@@ -89,6 +74,10 @@ namespace Infra.Data
                 builder.Property(p => p.Name)
                     .HasColumnName("name")
                     .HasColumnType("varchar(255)")
+                    .IsRequired();
+                builder.Property(p => p.IsActive)
+                    .HasColumnName("active")
+                    .HasColumnType("boolean")
                     .IsRequired();
             });
             // Publisher
@@ -118,6 +107,15 @@ namespace Infra.Data
                  .HasColumnName("comment")
                  .HasColumnType("varchar(255)")
                  .IsRequired();
+
+                builder.Property(p => p.BookId)
+                .HasColumnName("book_id")
+                .IsRequired();
+
+                builder.HasOne(r => r.Book)  
+                .WithOne(b => b.Review)   
+                .HasForeignKey<Review>(r => r.BookId)  
+                .OnDelete(DeleteBehavior.Cascade); 
             });
         }
 

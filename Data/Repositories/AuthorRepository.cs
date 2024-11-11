@@ -1,5 +1,4 @@
-﻿using Application.Interfaces;
-using Domain.Entities;
+﻿using Domain.Entities;
 using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,7 +18,7 @@ namespace Infra.Data.Repositories
         }
         public async Task<IEnumerable<Author>> GetAllWithBooks()
         {
-            return await _repository.Get().Include(c => c.Books).ToListAsync();
+            return await _repository.Get().Where(a => a.Books.Any()).Include(b => b.Books).ToListAsync();
         }
 
         public async Task CreateAsync(Author author)
@@ -32,15 +31,15 @@ namespace Infra.Data.Repositories
             return authorEntitiy;
         }
 
-        public Task UpdateAsync(Author author)
+        public void Update(Author author)
         {
-            return _repository.UpdateAsync(author);
+            _repository.Update(author);
         }
 
-        public async Task DisableAsync(Author author)
+        public void Disable(Author author)
         {
             author.IsActive = author.IsActive;
-            await _repository.UpdateAsync(author);
+            _repository.Update(author);
         }
     }
 }

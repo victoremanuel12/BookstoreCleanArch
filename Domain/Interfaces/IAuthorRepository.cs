@@ -1,6 +1,6 @@
 ﻿using Domain.Entities;
 
-namespace Application.Interfaces
+namespace Domain.Interfaces
 {
     public interface IAuthorRepository
     {
@@ -8,7 +8,7 @@ namespace Application.Interfaces
         Task<IEnumerable<Author>> GetAllWithBooks();
         Task<Author> GetByIdAsync(Author author);
         Task CreateAsync(Author author);
-        Task UpdateAsync(Author author);
-        Task DisableAsync(Author author);
+        void Update(Author author);
+        void Disable(Author author);
     }
 }
