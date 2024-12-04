@@ -1,15 +1,17 @@
-﻿using Application.Dtos.Author;
+﻿using Application.CQRS.Author.Command.CreateAuthorCommand;
+using Application.Dtos.Author;
 using Domain.Abstraction;
+using Domain.Abstraction.PaginationFilter;
 
 namespace Application.ServiceInterface
 {
     public interface IAuthorService
     {
-        Task<Result<IEnumerable<AuthorDtoResponse>>> GetAll();
-        Task<Result<IEnumerable<AuthorWithBooksDtoRequest>>> GetAllWithBooks();
-        Task<Result<AuthorDtoResponse>> Create(AuthorDtoRequest authorDtoRequest);
+        Task<Result<PagedResult<IEnumerable<AuthorDtoResponse>>>> GetAll(PaginationFilter filter, string route);
+        Task<Result<IEnumerable<AuthorDtoWithBooksResponse>>> GetAllWithBooks(PaginationFilter filter, string route);
+        Task<Result<AuthorDtoResponse>> Create(CreateAuthorCommand command);
         Task<Result<AuthorDtoResponse>> Update(AuthorDtoRequest authorDtoRequest);
-        Task<Result<AuthorDtoResponse>> Diseble(AuthorDisableDto authorDisableDto);
+        Task<Result<AuthorDtoResponse>> Diseble(AuthorDtoDisableRequest authorDisableDto);
 
     }
 }

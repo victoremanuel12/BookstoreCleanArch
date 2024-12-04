@@ -8,7 +8,7 @@ namespace Api.Extensions
         {
             if (result.IsSuccess)
             {
-                return Results.Ok(result.Value);
+                return Results.Ok(result.Data);
             }
             return GetErrorResult(result.Error);
         }

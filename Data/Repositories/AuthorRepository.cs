@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Domain.Abstraction.PaginationFilter;
+using Domain.Entities;
 using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,15 +13,26 @@ namespace Infra.Data.Repositories
         {
             _repository = repository;
         }
-        public async Task<IEnumerable<Author>> GetAllAsync()
+        public async Task<IEnumerable<Author>> GetAllAsync(PaginationFilter filter)
         {
-            return await _repository.GetAllAsync();
+
+            var pagedData = await _repository.Get()
+                .Skip((filter.PageNumber - 1) * filter.PageSize)
+                .Take(filter.PageSize)
+                .OrderBy(a => a.Id)
+                .ToListAsync();
+
+            return pagedData;
+
         }
-        public async Task<IEnumerable<Author>> GetAllWithBooks()
+        public async Task<IEnumerable<Author>> GetAllWithBooks(PaginationFilter filter)
         {
             return await _repository.Get().Where(a => a.Books.Any()).Include(b => b.Books).ToListAsync();
         }
-
+        public async Task<int> CountAllRecords()
+        {
+            return await _repository.Get().CountAsync();
+        }
         public async Task CreateAsync(Author author)
         {
             await _repository.AddAsync(author);
@@ -41,5 +53,7 @@ namespace Infra.Data.Repositories
             author.IsActive = author.IsActive;
             _repository.Update(author);
         }
+
+       
     }
 }

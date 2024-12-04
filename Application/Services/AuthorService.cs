@@ -1,8 +1,11 @@
-﻿using Application.Dtos.Author;
+﻿using Application.CQRS.Author.Command.CreateAuthorCommand;
+using Application.Dtos.Author;
 using Application.Errors;
+using Application.Helpers;
 using Application.ServiceInterface;
 using AutoMapper;
 using Domain.Abstraction;
+using Domain.Abstraction.PaginationFilter;
 using Domain.Entities;
 using Domain.Interfaces;
 
@@ -10,38 +13,50 @@ namespace Application.Services
 {
     public class AuthorService : IAuthorService
     {
-        public readonly IAuthorRepository _authorRepository;
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IUriService _uriService;
 
 
-
-        public AuthorService(IAuthorRepository authorRepository, IMapper mapper, IUnitOfWork unitOfWork)
+        public AuthorService(IMapper mapper, IUnitOfWork unitOfWork, IUriService uriService)
         {
-            _authorRepository = authorRepository;
             _mapper = mapper;
             _unitOfWork = unitOfWork;
-        }
-
-        public async Task<Result<IEnumerable<AuthorDtoResponse>>> GetAll()
-        {
-            var listAutor = await _unitOfWork.AuthorRepository.GetAllAsync();
-            if (listAutor.Count() == 0)
-                return Result<IEnumerable<AuthorDtoResponse>>.Failure(AuthorErrors.NotFound);
-
-            IEnumerable<AuthorDtoResponse> listAuthorDto = _mapper.Map<IEnumerable<AuthorDtoResponse>>(listAutor);
-            return Result<IEnumerable<AuthorDtoResponse>>.Success(listAuthorDto);
+            _uriService = uriService;
         }
 
 
-        public async Task<Result<IEnumerable<AuthorWithBooksDtoRequest>>> GetAllWithBooks()
+        public async Task<Result<PagedResult<IEnumerable<AuthorDtoResponse>>>> GetAll(PaginationFilter filter, string route)
         {
-            IEnumerable<Author> authorWithBooks = await _unitOfWork.AuthorRepository.GetAllWithBooks();
+            var listAuthor = await _unitOfWork.AuthorRepository.GetAllAsync(filter);
+            if (!listAuthor.Any())
+                return Result<PagedResult<IEnumerable<AuthorDtoResponse>>>.Failure(AuthorErrors.NotFound);
+
+            IEnumerable<AuthorDtoResponse> listAuthorDto = _mapper.Map<IEnumerable<AuthorDtoResponse>>(listAuthor);
+
+            int totalRecords = await _unitOfWork.AuthorRepository.CountAllRecords();
+
+            var pagedResponse = PagedResponseHelper.CreatePagedResponse(
+                pagedData: listAuthorDto.ToList(),
+                filter: filter,
+                totalRecords: totalRecords,
+                uriService: _uriService,
+                route
+            );
+
+            return pagedResponse;
+        }
+
+
+
+        public async Task<Result<IEnumerable<AuthorDtoWithBooksResponse>>> GetAllWithBooks(PaginationFilter filter, string route)
+        {
+            IEnumerable<Author> authorWithBooks = await _unitOfWork.AuthorRepository.GetAllWithBooks(filter);
             if (authorWithBooks.Count() == 0)
-                return Result<IEnumerable<AuthorWithBooksDtoRequest>>.Failure(AuthorErrors.NotFound);
+                return Result<IEnumerable<AuthorDtoWithBooksResponse>>.Failure(AuthorErrors.NotFound);
 
-            IEnumerable<AuthorWithBooksDtoRequest> authorWithBookDto = _mapper.Map<IEnumerable<AuthorWithBooksDtoRequest>>(authorWithBooks);
-            return Result<IEnumerable<AuthorWithBooksDtoRequest>>.Success(authorWithBookDto);
+            IEnumerable<AuthorDtoWithBooksResponse> authorWithBookDto = _mapper.Map<IEnumerable<AuthorDtoWithBooksResponse>>(authorWithBooks);
+            return Result<IEnumerable<AuthorDtoWithBooksResponse>>.Success(authorWithBookDto);
         }
 
         public async Task<Result<AuthorDtoResponse>> Update(AuthorDtoRequest authorDtoRequest)
@@ -57,24 +72,25 @@ namespace Application.Services
             return Result<AuthorDtoResponse>.Success(authorDtoResponse);
 
         }
-        public async Task<Result<AuthorDtoResponse>> Diseble(AuthorDisableDto authorDisableDto)
+        public async Task<Result<AuthorDtoResponse>> Diseble(AuthorDtoDisableRequest authorDisableDto)
         {
             Author author = _mapper.Map<Author>(authorDisableDto);
             Author authorEntity = await _unitOfWork.AuthorRepository.GetByIdAsync(author);
             if (authorEntity is null)
                 return Result<AuthorDtoResponse>.Failure(AuthorErrors.NotFound);
             _mapper.Map(authorDisableDto, authorEntity);
-            _authorRepository.Disable(authorEntity);
+            _unitOfWork.AuthorRepository.Disable(authorEntity);
             await _unitOfWork.CommitAsync();
             AuthorDtoResponse authorDtoResponse = _mapper.Map<AuthorDtoResponse>(authorEntity);
             return Result<AuthorDtoResponse>.Success(authorDtoResponse);
 
         }
 
-        public async Task<Result<AuthorDtoResponse>> Create(AuthorDtoRequest authorDtoRequest)
+        public async Task<Result<AuthorDtoResponse>> Create(CreateAuthorCommand command)
         {
-            Author author = _mapper.Map<Author>(authorDtoRequest);
-            await _authorRepository.CreateAsync(author);
+            Author author = _mapper.Map<Author>(command);
+            await _unitOfWork.AuthorRepository.CreateAsync(author);
+            await _unitOfWork.CommitAsync();
             AuthorDtoResponse authorDtoResponse = _mapper.Map<AuthorDtoResponse>(author);
             return Result<AuthorDtoResponse>.Success(authorDtoResponse);
 
@@ -83,3 +99,12 @@ namespace Application.Services
 
     }
 }
+//public async Task<Result<IEnumerable<AuthorDtoResponse>>> GetAll(PaginationFilter validFilter)
+//{
+//    var listAutor = await _unitOfWork.AuthorRepository.GetAllAsync(validFilter);
+//    if (listAutor.Count() == 0)
+//        return Result<IEnumerable<AuthorDtoResponse>>.Failure(AuthorErrors.NotFound);
+
+//    IEnumerable<AuthorDtoResponse> listAuthorDto = _mapper.Map<IEnumerable<AuthorDtoResponse>>(listAutor);
+//    return Result<IEnumerable<AuthorDtoResponse>>.Success(listAuthorDto);
+//}

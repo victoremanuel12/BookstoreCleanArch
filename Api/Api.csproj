@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Infra.IoC\Infra.IoC.csproj" />
+     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8" />
   </ItemGroup>
 
 </Project>

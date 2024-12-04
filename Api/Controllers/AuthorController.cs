@@ -1,45 +1,57 @@
 ﻿using Api.Extensions;
+using Application.CQRS.Author.Command.CreateAuthorCommand;
+using Application.CQRS.Author.Query.GetAllAuthorWithBooksQuery;
+using Application.CQRS.Author.Query.GettAllQuery;
 using Application.Dtos.Author;
 using Application.ServiceInterface;
+using Domain.Abstraction.PaginationFilter;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
+
     public class AuthorController : ControllerBase
     {
+        private IMediator _mediator;
         private readonly IAuthorService _authorService;
-        public AuthorController(IAuthorService authorService)
+        public AuthorController(IAuthorService authorService, IMediator mediator)
         {
             _authorService = authorService;
+            _mediator = mediator;
         }
-
         [HttpGet]
-        public async Task<IResult> Get()
+        public async Task<IResult> Get([FromQuery] PaginationFilter filter)
         {
-            var result = await _authorService.GetAll();
+            var route = Request.Path.Value;
+            var result = await _mediator.Send(new GetAllAuthorQuery(filter, route));
             return Results.Extensions.MapResult(result);
         }
         [HttpGet("books")]
-        public async Task<IResult> GetAllWithBooks()
+        public async Task<IResult> GetAllWithBooks([FromQuery] PaginationFilter filter)
         {
-            var result = await _authorService.GetAllWithBooks();
+            var route = Request.Path.Value;
+            var result = await _mediator.Send(new GetAllAuthorWithBooksQuery(filter,route));
             return Results.Extensions.MapResult(result);
         }
 
         //[HttpGet("{id}")]
         //public string Get(int id)
         //{
-        //    return "value";
+        //    return "value";   
         //}
 
-        //[HttpPost]
-        //public async Task<IResult> Post([FromBody] AuthorDtoRequest authorDtoRequest)
-        //{
-        //    var result = await _authorService.GetAllWithBooks();
-        //    return Results.Extensions.MapResult(result);
-        //}
+        [HttpPost]
+        public async Task<IResult> Post([FromBody] CreateAuthorCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Results.Extensions.MapResult(result);
+        }
+
         [HttpPut("{id}")]
         public async Task<IResult> Put(int id, [FromBody] AuthorDtoRequest authorDtoRequest)
         {
@@ -48,7 +60,7 @@ namespace Api.Controllers
         }
 
         [HttpPut("{id}/desable")]
-        public async Task<IResult> Disable(int id, [FromBody] AuthorDisableDto authorDisableDto)
+        public async Task<IResult> Disable(int id, [FromBody] AuthorDtoDisableRequest authorDisableDto)
         {
             var result = await _authorService.Diseble(authorDisableDto);
             return Results.Extensions.MapResult(result);

@@ -1,6 +1,6 @@
 ﻿namespace Application.Dtos.Author
 {
-    public record AuthorDtoResponse(long Id, string Name)
+    public sealed record AuthorDtoResponse(long Id, string Name , bool IsActive ) 
     {
     }
 }
