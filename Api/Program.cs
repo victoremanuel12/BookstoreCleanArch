@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddSwagger();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddAuthentication(builder.Configuration);
+builder.Services.AddAuthorizationPolicies();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddExceptionHandler<FluentValidationGlobalExceptionHandler>();
 builder.Services.AddExceptionHandler<GlobalExceptionHandling>();

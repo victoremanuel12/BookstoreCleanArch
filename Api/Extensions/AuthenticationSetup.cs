@@ -1,5 +1,8 @@
 ﻿using Identity.Configuration;
+using Identity.Constants;
+using Identity.PolicyRequirements;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -66,6 +69,17 @@ namespace Api.Extensions
                         return Task.CompletedTask;
                     }
                 };
+            });
+        }
+        public static void AddAuthorizationPolicies(this IServiceCollection services)
+        {
+            services.AddSingleton<IAuthorizationHandler, HorarioComercialHandler>();
+            services.AddAuthorization(opt =>
+            {
+                opt.AddPolicy(Policies.HorarioComercial, policy =>
+                {
+                    policy.Requirements.Add(new HorarioComercialRequeriment());
+                });
             });
         }
     }

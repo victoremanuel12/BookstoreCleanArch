@@ -5,6 +5,7 @@ using Application.CQRS.Author.Query.GettAllQuery;
 using Application.Dtos.Author;
 using Application.ServiceInterface;
 using Domain.Abstraction.PaginationFilter;
+using Identity.Constants;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -25,6 +26,7 @@ namespace Api.Controllers
             _mediator = mediator;
         }
         [HttpGet]
+        [Authorize(Policy = Policies.HorarioComercial)]
         public async Task<IResult> Get([FromQuery] PaginationFilter filter)
         {
             var route = Request.Path.Value;
