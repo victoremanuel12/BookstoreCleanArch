@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
 
-namespace Application.CQRS.User.Command.CreateUserCommand
+namespace Application.CQRS.OAuth.Command.CreateUserCommand
 {
-    public sealed class CreateUserValidator : AbstractValidator<CreateUserCommand>
+    public sealed class SignInValidator : AbstractValidator<SignInCommand>
     {
-        public CreateUserValidator()
+        public SignInValidator()
         {
             RuleFor(command => command.Nome)
                 .NotNull().WithMessage("O nome é obrigatório.")

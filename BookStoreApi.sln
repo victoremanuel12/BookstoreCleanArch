@@ -18,7 +18,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity", "IdentityFrame\Identity.csproj", "{0C203C38-ABD8-4459-821F-1E0F63386AC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity", "IdentityFrame\Identity.csproj", "{0C203C38-ABD8-4459-821F-1E0F63386AC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{827F9D3D-716C-42C1-8416-5427E80A5163}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{0C203C38-ABD8-4459-821F-1E0F63386AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C203C38-ABD8-4459-821F-1E0F63386AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C203C38-ABD8-4459-821F-1E0F63386AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{827F9D3D-716C-42C1-8416-5427E80A5163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{827F9D3D-716C-42C1-8416-5427E80A5163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{827F9D3D-716C-42C1-8416-5427E80A5163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{827F9D3D-716C-42C1-8416-5427E80A5163}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

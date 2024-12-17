@@ -1,10 +1,11 @@
-﻿using FluentValidation;
+﻿using Application.CQRS.OAuth.Command.LoginUserCommand;
+using FluentValidation;
 
 namespace Application.CQRS.User.Command.LoginUserCommand
 {
-    public sealed class LoginUserValidator : AbstractValidator<LoginUserCommand>
+    public sealed class LoginValidator : AbstractValidator<LoginCommand>
     {
-        public LoginUserValidator()
+        public LoginValidator()
         {
             RuleFor(command => command.Email).Cascade(CascadeMode.Stop)
                 .NotEmpty().WithMessage("O {PropertyName}  é obrigatório.").EmailAddress().WithMessage("Insira um email valido").

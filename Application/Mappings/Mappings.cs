@@ -1,7 +1,6 @@
 ﻿using Application.CQRS.Author.Command.CreateAuthorCommand;
 using Application.Dtos.Author;
 using Application.Dtos.Book;
-using Application.Dtos.User;
 using AutoMapper;
 using Domain.Entities;
 

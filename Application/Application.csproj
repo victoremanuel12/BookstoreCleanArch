@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CQRS\User\Query\" />
+    <Folder Include="CQRS\OAuth\Query\" />
   </ItemGroup>
 
 </Project>

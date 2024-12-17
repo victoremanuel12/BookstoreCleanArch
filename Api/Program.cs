@@ -29,11 +29,8 @@ builder.Services.AddSingleton((Func<IServiceProvider, IUriService>)(o =>
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseCors(builder => builder

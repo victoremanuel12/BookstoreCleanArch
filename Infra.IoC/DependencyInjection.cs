@@ -51,7 +51,7 @@ namespace Infra.IoC
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IAuthorService, AuthorService>();
 
-            services.AddScoped<IIdentityService, IdentityService>();
+            services.AddScoped<IAuthService, AuthService>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IAuthorRepository, AuthorRepository>();
             services.AddScoped<IReviewRepository, ReviewRepository>();
