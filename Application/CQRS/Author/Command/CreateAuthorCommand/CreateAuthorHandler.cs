@@ -1,16 +1,14 @@
 ﻿using Application.Dtos.Author;
 using Application.ServiceInterface;
 using Domain.Abstraction;
-using FluentValidation;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
 
 namespace Application.CQRS.Author.Command.CreateAuthorCommand
 {
-    public sealed class CreateUserHandler : IRequestHandler<CreateAuthorCommand, Result<AuthorDtoResponse>>
+    public sealed class CreateAuthorHandler : IRequestHandler<CreateAuthorCommand, Result<AuthorDtoResponse>>
     {
         private readonly IAuthorService _authorService;
-        public CreateUserHandler(IAuthorService authorService, IValidator<CreateAuthorCommand> validator)
+        public CreateAuthorHandler(IAuthorService authorService)
         {
             _authorService = authorService;
         }

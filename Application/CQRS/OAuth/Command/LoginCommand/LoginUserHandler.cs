@@ -6,7 +6,7 @@ using MediatR;
 
 namespace Application.CQRS.User.Command.LoginUserCommand
 {
-    public class LoginUserHandler : IRequestHandler<LoginCommand, Result<LoginDtoResponse>>
+    public sealed class LoginUserHandler : IRequestHandler<LoginCommand, Result<LoginDtoResponse>>
     {
         private readonly IAuthService _identityService;
 

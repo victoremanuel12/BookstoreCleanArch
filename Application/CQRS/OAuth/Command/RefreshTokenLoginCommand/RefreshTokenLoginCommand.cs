@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Application.CQRS.OAuth.Command.RefreshTokenLogin
 {
-    public record RefreshTokenLoginCommand(string UserId) : IRequest<Result<LoginDtoResponse>>
+    public sealed record RefreshTokenLoginCommand(string UserId) : IRequest<Result<LoginDtoResponse>>
     {
     }
 }

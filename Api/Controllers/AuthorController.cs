@@ -28,7 +28,6 @@ namespace Api.Controllers
         [HttpGet]
         [Authorize(Policy = Policies.HorarioComercial)]
         [Authorize(Roles = Roles.Admin)]
-        //[ClaimsAuthorize(ClaimTypes.author,"Read")]
         public async Task<IResult> Get([FromQuery] PaginationFilter filter)
         {
             var route = Request.Path.Value;
@@ -50,7 +49,6 @@ namespace Api.Controllers
         //}
 
         [HttpPost]
-        //[ClaimsAuthorize(ClaimTypes.author, "Write")]
 
         public async Task<IResult> Post([FromBody] CreateAuthorCommand command)
         {

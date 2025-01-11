@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Application.CQRS.OAuth.Command.RefreshTokenLogin
 {
-    public class RefreshTokenLoginHandler : IRequestHandler<RefreshTokenLoginCommand, Result<LoginDtoResponse>>
+    public sealed class RefreshTokenLoginHandler : IRequestHandler<RefreshTokenLoginCommand, Result<LoginDtoResponse>>
     {
         private readonly IAuthService _identityService;
 

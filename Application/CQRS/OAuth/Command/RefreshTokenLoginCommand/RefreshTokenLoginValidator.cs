@@ -2,7 +2,7 @@
 
 namespace Application.CQRS.OAuth.Command.RefreshTokenLogin
 {
-    public class RefreshTokenLoginValidator : AbstractValidator<RefreshTokenLoginCommand>
+    public sealed class RefreshTokenLoginValidator : AbstractValidator<RefreshTokenLoginCommand>
     {
         public RefreshTokenLoginValidator()
         {
